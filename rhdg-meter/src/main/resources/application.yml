@@ -1,0 +1,25 @@
+quarkus:
+  log.level: INFO
+
+  infinispan-client:
+    server-list: localhost:11222
+    auth-username: developer
+    auth-password: developer
+    # client-intelligence: BASIC
+
+  openshift:
+    namespace: middleware-dev
+    route.expose: true
+    labels.application: rhdg-meter
+
+
+
+benchmark:
+  bookbenchmark:
+    warmup-enabled: true
+    running-seconds: 10
+
+
+# quarkus.package.type=uber-jar
+# quarkus.micrometer.export.prometheus.enabled=true
+

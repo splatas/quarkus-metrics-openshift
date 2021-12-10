@@ -1,0 +1,24 @@
+quarkus.log.level=INFO
+
+# Infinispan Server address
+quarkus.infinispan-client.server-list=localhost:11222
+
+# Authentication
+quarkus.infinispan-client.auth-username=developer
+quarkus.infinispan-client.auth-password=developer
+
+# Infinispan client intelligence
+# Use BASIC as a Docker for Mac workaround
+# quarkus.infinispan-client.client-intelligence=BASIC
+
+# quarkus.package.type=uber-jar
+# quarkus.micrometer.export.prometheus.enabled=true
+
+# OCP deployment
+quarkus.openshift.namespace=middleware-dev
+quarkus.openshift.route.expose=true
+quarkus.openshift.labels.application=rhdg-meter
+
+
+benchmark.bookbenchmark.warmup-enabled=true
+benchmark.bookbenchmark.running-seconds=10
